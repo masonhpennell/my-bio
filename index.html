@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Mason Pennell - A little about me</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>Mason Pennell - Student at CSULB </h1>
-  <h3>An ambitious voice actor and programmer with no discipline whatsoever.</h3>
-
-</div>
-
-
-<div class="container" style="margin-top:30px">
-    
- <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">A LITTLE ABOUT <span class="text-muted">ME.</span></h2>
-        <p class="lead">My name is Mason Pennell. I am a freshman at Cal State Long Beach and am in the Computer Science Program. I have always had an interest in computers and technology as a whole ever since I started playing video games.
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">CSULB</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="myface.jpg" alt="Mason Pennell" width="200" height="200">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>A Little Bit About Me</h1>
+      <p>My name is Mason Pennell. I am a freshman at Cal State Long Beach and am in the Computer Science Program. I have always had an interest in computers and technology as a whole ever since I started playing video games.
         I want to succeed in this course, as well as other CECS courses so I can eventually work at a company like Blizzard and work on upcoming projects. In my free time, I like to play video games, watch YouTube, exercise, and read books.
         Somebody once told me the world is gonna roll me. I ain't the sharpest tool in the shed. She was looking kind of dumb with her finger and her thumb in the shape of an "L" on her forehead.
         Well, the years start coming and they don't stop coming, ged to the rules and I hit the ground running. Didn't make sense not to live for fun, your brain gets smart but your head gets dumb.
-        So much to do, so much to see, so what's wrong with taking the backstreets? You'll never know if you don't go. You'll never shine if you don't glow.</div>
-      <div class="col-md-5">
-        <img src="myface.jpg" alt="Mason Pennell" width="445" height="445">
-
-      </div>
-    </div>
- 
-   <hr class="featurette-divider">
-    
-<div class="row featurette">
-      <div class="col-md-7">
-          <ul>
-          <li>Learned how to code in Python</li>
+        So much to do, so much to see, so what's wrong with taking the backstreets? You'll never know if you don't go. You'll never shine if you don't glow.</p>
+      <hr>
+      <h3>My Accomplishments</h3>
+      <li>Learned how to code in Python</li>
             <li>Kinda knows how to code in Java</li>
             <li>Finalist in his middle school science fair</li>
             <li>Went to Italy, Japan, Cancun, and moar</li>  
@@ -53,19 +83,21 @@
             <li>Does a mean Skeletor impression</li>
           
           </ul>
-        
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
       </div>
-      <div class="col-md-5">
-         <h2 class="featurette-heading">SOME OF MY  <span class="text-muted">ACCOMPLISHMENTS.</span></h2>
+      <div class="well">
+        <p>ADS</p>
       </div>
     </div>
- 
-   <hr class="featurette-divider">    
-    
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p><a href="mailto:mason.pennell01@student.csulb.edu">Contact Me</a> -  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">My Website</a></p><p>Last updated on 5-7-21</p>
-    <i class="fas fa-chalkboard-teacher" style="font-size:60px;color:gold;text-shadow:2px 2px 4px #000000;"></i>
+  </div>
 </div>
-    </div>
+
+<footer class="container-fluid text-center">
+  <p><a href="mailto:mason.pennell01@student.csulb.edu">Email</a> -  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">LinkedIn</a></p><p>Last updated on 5-7-21</p>
+</footer>
+
 </body>
 </html>
